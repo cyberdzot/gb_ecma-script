@@ -10,10 +10,12 @@ const createCounter = () => {
   return {
     increment: () => ++count,
     decrement: () => --count,
+    getCount: () => count,
   };
 };
 const counter = createCounter();
 console.log("count++: " + counter.increment());
+console.log("count: " + counter.getCount());
 console.log("count--: " + counter.decrement());
 
 // 3) Напишем функцию, которая будет находить факториал числа с использованием рекурсии:
